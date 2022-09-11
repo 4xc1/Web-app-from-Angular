@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { ModelCity } from "src/models/ModelCity";
+import { citys as data } from 'src/data/city'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'testQuestion';
+  citys: ModelCity[] = data;  
 }
