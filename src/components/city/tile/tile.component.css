@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+.action {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 300px;
+  background: #F2F5FA;
+  border-radius: 8px;
+  margin: 0 13px 20px 0;
+}
+
+.image {
+  width: 320px;
+  height: 188px;
+  border-radius: 5px 5px 0 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  font-family: 'Roboto';
+}
+
+.name {
+  padding: 16.5px 11px 12.5px 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #434652;
+}
+
+.favoriteBtn {
+  background: #F2F5FA;
+  border: none;
+  height: 20px;
+  width: 22px;
+}
+
+.iconFavoriteTrue {
+  background-image: url("src/images/favoriteTrue.png");
+  align-items: center;
+  padding: 1px 5px 10px 12px;
+  background-repeat: no-repeat;
+}
+
+.iconFavorite {
+  background-image: url("src/images/favorite.png");
+  align-items: center;
+  padding: 1px 5px 10px 12px;
+  background-repeat: no-repeat;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757986;
+  padding: 0 20px;
+}

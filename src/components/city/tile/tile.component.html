@@ -1,0 +1,51 @@
+<div (mouseover)="actions = true" (mouseout)="actions = false">
+  <div *ngIf="actions">
+    <div class="mainContainer">
+      <div class="container action">
+        <img [src]="citys.image" [alt]="citys.name" class="image" />
+        <div class="textContainer">
+          <span class="name">
+            {{ citys.name }}
+            <button
+              class="favoriteBtn"
+              (click)="citys.favorite = !citys.favorite"
+            >
+              <div *ngIf="!citys.favorite">
+                <i class="iconFavorite"></i>
+              </div>
+              <div *ngIf="citys.favorite">
+                <i class="iconFavoriteTrue"></i>
+              </div>
+            </button>
+          </span>
+          <span class="description">{{ citys.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!actions">
+    <div class="mainContainer">
+      <div class="container">
+        <img [src]="citys.image" [alt]="citys.name" class="image" />
+        <div class="textContainer">
+          <span class="name">
+            {{ citys.name }}
+            <button
+              class="favoriteBtn"
+              (click)="citys.favorite = !citys.favorite"
+            >
+              <div *ngIf="!citys.favorite">
+                <i class="iconFavorite"></i>
+              </div>
+              <div *ngIf="citys.favorite">
+                <i class="iconFavoriteTrue"></i>
+              </div>
+            </button>
+          </span>
+          <span class="description">{{ citys.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

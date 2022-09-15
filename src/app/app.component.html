@@ -1,8 +1,58 @@
-<div class="container">
+<div *ngIf="!form">
+  <div class="container">
     <app-header></app-header>
-    <app-button></app-button>
-    <app-city
-    *ngFor="let city  of citys" [citys] = "city"
-    ></app-city>
-    
+    <div *ngIf="list">
+      <div class="btnContainer">
+        <button class="enable select">
+          <span class="btnText">Список</span>
+        </button>
+        <button class="disable select" (click)="list = false">
+          <span class="btnText">Плитка</span>
+        </button>
+        <button
+          class="add"
+          (mouseover)="actions = true"
+          (mouseout)="actions = false"
+          (click)="form = true"
+          (click)="actions = false"
+        >
+          <span class="addText">Создать</span>
+        </button>
+      </div>
+      <app-list *ngFor="let city of citys" [citys]="city"> </app-list>
+    </div>
+
+    <div *ngIf="!list">
+      <div class="btnContainer">
+        <button class="disable select" (click)="list = true">
+          <span class="btnText">Список</span>
+        </button>
+        <button class="enable select">
+          <span class="btnText">Плитка</span>
+        </button>
+        <button
+          class="add"
+          (mouseover)="actions = true"
+          (mouseout)="actions = false"
+          (click)="form = true"
+          (click)="actions = false"
+        >
+          <span class="addText">Создать</span>
+        </button>
+      </div>
+      <div class="containerTile">
+        <app-tile *ngFor="let city of citys" [citys]="city"> </app-tile>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="form">
+  <app-form
+    (outFormAction)="closeForm(form)"
+    (outFormName)="addName($event)"
+    (outFormDescription)="addDescription($event)"
+    (outFormImage)="addImage($event)"
+    (outFormAction)="addCity(nameAdd, descriptionAdd, imageAdd)"
+  ></app-form>
 </div>

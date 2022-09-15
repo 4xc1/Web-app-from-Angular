@@ -1,22 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/components/header/header.component';
-import { ButtonComponent } from 'src/components/button/button.component';
-import { CityComponent } from 'src/components/city/city.component';
+import { ListComponent } from 'src/components/city/list/list.component';
+import { TileComponent } from 'src/components/city/tile/tile.component';
+import { FormComponent } from 'src/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ButtonComponent,
-    CityComponent,
+    ListComponent,
+    TileComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

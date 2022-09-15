@@ -1,0 +1,42 @@
+<div class = "form"><p class="header">Создание города</p></div>
+<form> 
+  <button 
+  class="back" 
+  type="button"
+  (click)="changeFormAction()"
+  >
+    <span class="iconBack">
+    </span>
+    <span class="textBtn">
+      Назад
+    </span>
+  </button>
+  <label for="topic">Тема сообщения</label>
+  <input 
+  id="topic"
+  #nameInput
+  type="text"
+  >
+  <label for="txt">Текст сообщения</label>
+  <input
+  id="txt"
+  #descriptionInput
+  type="text"
+  >
+  <label for="img">Ссылка на картинку</label>
+  <input 
+  id="img"
+  #imageInput
+  type="text"
+  >
+  <button 
+  class="createBtn"
+  type="button"
+  (click)="submitName(nameInput)"
+  (click)="submitDescription(descriptionInput)"
+  (click)="submitImage(imageInput)"
+  (click)="changeFormAction()"
+  >
+    <span class="createTxt">Создать</span>
+  </button>
+</form>

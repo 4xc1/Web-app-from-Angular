@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import url(http://fonts.cdnfonts.com/css/sf-ui-display);
+
+.form {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 117px;
+  left: 0px;
+  top: 0px;
+  background-color: #F2F5FA;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.header {
+  font-size: 28px;
+  line-height: 33px;
+  color: #434652;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 189px 52px 0 52px;
+}
+
+.back {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px 0px 12px;
+  gap: 12px;
+  width: 97px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #C4C7D1;
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+
+.iconBack {
+  background-image: url("src/images/back.png");
+  align-items: center;
+  padding: 1px 5px 15px 12px;
+  background-repeat: no-repeat;
+}
+
+.textBtn {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  color: #434652;
+}
+
+label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #434652;
+}
+
+#topic {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 534px;
+  border: 1px solid #C4C7D1;
+  border-radius: 2px;
+}
+
+#txt {
+  margin-bottom: 20px;
+  height: 104px;
+  width: 534px;
+  border: 1px solid #C4C7D1;
+  border-radius: 2px;
+}
+
+#img {
+  margin-bottom: 40px;
+  height: 60px;
+  width: 534px;
+  border: 1px solid #C4C7D1;
+  border-radius: 2px;
+}
+
+.createBtn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 88px;
+  height: 36px;
+  padding: 0px 16px;
+  gap: 10px;
+  background: #21A5B9;
+  border: 1px solid #21A5B9;
+  border-radius: 2px;
+}
+
+.createTxt {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.action {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
